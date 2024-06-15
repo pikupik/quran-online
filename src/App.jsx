@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SearchBar from './components/searchBar';
 import SurahList from './components/surahList';
 import AyahList from './components/AyahList';
+import Footer from './components/Footer';
 
 const App = () => {
   const [surahs, setSurahs] = useState([]);
@@ -44,6 +45,7 @@ const App = () => {
           <SurahList surahs={filteredSurahs} onSelect={handleSelectSurah} />
         </>
       )}
+      <Footer />
     </div>
   );
 };
