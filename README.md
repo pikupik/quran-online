@@ -2,4 +2,4 @@
 
 thanks to : https://alquran.cloud/api (public api)
 
-this link if you wanna see: quran-pages.vercel.app
+this link if you wanna see: https://quran-pages.vercel.app
