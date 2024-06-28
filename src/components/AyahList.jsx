@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const AyahList = ({ surahNumber, onBack }) => {
   const [ayahs, setAyahs] = useState([]);
   const [surahName, setSurahName] = useState('');
+  const [ayahCount, setAyahCount] = useState('Loading...');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const AyahList = ({ surahNumber, onBack }) => {
         }));
         setAyahs(ayahData);
         setSurahName(data.data[0].englishName); // Set the Surah name
+        setAyahCount(data.data[0].ayahs.length); // Set the Ayah count
         setLoading(false);
       });
   }, [surahNumber]);
@@ -24,6 +26,7 @@ const AyahList = ({ surahNumber, onBack }) => {
     <div>
       <button onClick={onBack} style={{ marginBottom: '20px' }}>Back</button>
       <h2>Surah: {surahName}</h2>
+      <p>Jumlah Ayat: {loading ? 'Loading' : ayahCount}</p>
       {loading ? (
         <p>Loading...</p>
       ) : (

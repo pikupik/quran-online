@@ -8,6 +8,7 @@ const SurahItem = ({ surah, onSelect }) => {
     >
       <h3>{surah.englishName} ({surah.name})</h3>
       <p>{surah.englishNameTranslation}</p>
+      <p>Jumlah Ayat: {surah.numberOfAyahs}</p>
     </div>
   );
 };

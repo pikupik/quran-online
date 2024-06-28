@@ -8,6 +8,10 @@ const Footer = () => {
         <a href="https://github.com/pikupik" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
+        &nbsp;&nbsp;||&nbsp;&nbsp;
+        <a href="https://saweria.co/pikpik" target="_blank" rel="noopener noreferrer">
+          Bantu Support Saya
+        </a>
       </p>
     </footer>
   );
